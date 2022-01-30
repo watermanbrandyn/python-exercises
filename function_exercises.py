@@ -139,21 +139,26 @@ def get_letter_grade(grade):
     # grade is then reassigned the string letter grade based on numeric grade and returned as a string
         grade = 'F'
         return grade
+    # series of if/elif statements for each category F
     elif grade < 70: 
         grade = 'D' 
         return grade
+    # testing for D
     elif grade < 80:
         grade = 'C'
         return grade
+    # testing for C
     elif grade < 90:
         grade = 'B'
         return grade
+    # testing for B
     elif grade >= 90:
         grade = 'A'
         return grade
+    # testing for A
 # Tested against numeric and non-numeric input. Non-numeric provides an error (is not error checked to re-prompt user)
 get_letter_grade(67)
-get_letter_grade('failed')
+#get_letter_grade('failed')
 #Not error checked for invalid inputs.
 
 #9. remove_vowels, accept string and removes vowels
